@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "vazir";
+    src: url(../fonts/Vazir-Regular.ttf);
+  }
+  @font-face {
+    font-family: "lalezar";
+    src: url(../fonts/Lalezar-Regular.ttf);
+  }
+  @font-face {
+    font-family: poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+  }
+  @font-face {
+    font-family: montez;
+    src: url(../fonts/montez-Regular.ttf);
+  }
+  @font-face {
+    font-family: montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+  }
+  @font-face {
+    font-family: helvetica;
+    src: url(../fonts/Helvetica-Regular.ttf);
+  }
+}
