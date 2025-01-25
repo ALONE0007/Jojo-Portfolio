@@ -13,12 +13,14 @@ window.addEventListener('scroll', function() {
         header.classList.add('bg-white');
         logoSvg.classList.replace('fill-white','fill-black')
         orgNavMenu.classList.replace('text-white','text-black')
+        hamburgerBtn.classList.replace('text-white','text-black')
         
     } else {
         header.classList.remove('bg-white');
         header.classList.add('bg-black');
         logoSvg.classList.replace('fill-black','fill-white')
         orgNavMenu.classList.replace('text-black','text-white')
+        hamburgerBtn.classList.replace('text-black','text-white')
 
     }
 });
