@@ -1,111 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JOJO Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="effects.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
+</head>
 
-  <body class="font-poppins text-[#222222]">
+<body class="font-poppins text-[#222222]">
 
     <header>
         <!-- navbar -->
-         <section>
-        <div id="header" class="shadow-lg py-3 bg-black duration-500 fixed w-full z-50">
-            <div class="container flex justify-between">
+        <section>
+            <div id="header" class="shadow-lg py-3 bg-black duration-500 fixed w-full z-50">
+                <div class="container flex justify-between">
 
-                <svg class="w-32 " xmlns="http://www.w3.org/2000/svg" version="1.0" width="116.000000pt" height="51.000000pt" viewBox="0 0 116.000000 51.000000" preserveAspectRatio="xMidYMid meet">
-                    <metadata>
-                    Created by potrace 1.10, written by Peter Selinger 2001-2011
-                    </metadata>
-                    <g id="logoSvg" class="fill-white duration-500" transform="translate(0.000000,51.000000) scale(0.100000,-0.100000)" stroke="none">
-                    <path d="M250 275 c0 -60 -3 -75 -15 -75 -8 0 -15 5 -15 10 0 6 -13 10 -30 10 -35 0 -37 -8 -9 -44 14 -18 30 -26 53 -26 55 0 64 15 68 113 l3 87 -27 0 -28 0 0 -75z"/>
-                    <path d="M382 340 c-12 -5 -29 -25 -38 -44 -35 -72 9 -146 87 -146 55 0 90 33 96 92 5 42 3 50 -25 78 -32 31 -73 38 -120 20z m90 -65 c17 -39 -3 -75 -42 -75 -38 0 -56 32 -41 73 14 37 66 39 83 2z"/>
-                    <path d="M630 275 c0 -60 -3 -75 -15 -75 -8 0 -15 5 -15 10 0 6 -13 10 -30 10 -28 0 -29 -1 -19 -27 13 -34 26 -43 65 -43 53 0 62 16 66 113 l3 87 -27 0 -28 0 0 -75z"/>
-                    <path d="M762 340 c-12 -5 -29 -25 -38 -44 -35 -72 9 -146 87 -146 55 0 90 33 96 92 5 42 3 50 -25 78 -32 31 -73 38 -120 20z m90 -65 c17 -39 -3 -75 -42 -75 -23 0 -33 6 -42 25 -17 39 3 75 42 75 23 0 33 -6 42 -25z"/>
-                    <path class="fill-orange-500" d="M949 203 c-9 -2 -19 -15 -22 -29 -4 -21 -1 -24 28 -24 28 0 32 3 30 27 -1 28 -9 33 -36 26z"/>
-                    </g>
-                </svg>
+                    <svg class="w-32 " xmlns="http://www.w3.org/2000/svg" version="1.0" width="116.000000pt"
+                        height="51.000000pt" viewBox="0 0 116.000000 51.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                            Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g id="logoSvg" class="fill-white duration-500"
+                            transform="translate(0.000000,51.000000) scale(0.100000,-0.100000)" stroke="none">
+                            <path
+                                d="M250 275 c0 -60 -3 -75 -15 -75 -8 0 -15 5 -15 10 0 6 -13 10 -30 10 -35 0 -37 -8 -9 -44 14 -18 30 -26 53 -26 55 0 64 15 68 113 l3 87 -27 0 -28 0 0 -75z" />
+                            <path
+                                d="M382 340 c-12 -5 -29 -25 -38 -44 -35 -72 9 -146 87 -146 55 0 90 33 96 92 5 42 3 50 -25 78 -32 31 -73 38 -120 20z m90 -65 c17 -39 -3 -75 -42 -75 -38 0 -56 32 -41 73 14 37 66 39 83 2z" />
+                            <path
+                                d="M630 275 c0 -60 -3 -75 -15 -75 -8 0 -15 5 -15 10 0 6 -13 10 -30 10 -28 0 -29 -1 -19 -27 13 -34 26 -43 65 -43 53 0 62 16 66 113 l3 87 -27 0 -28 0 0 -75z" />
+                            <path
+                                d="M762 340 c-12 -5 -29 -25 -38 -44 -35 -72 9 -146 87 -146 55 0 90 33 96 92 5 42 3 50 -25 78 -32 31 -73 38 -120 20z m90 -65 c17 -39 -3 -75 -42 -75 -23 0 -33 6 -42 25 -17 39 3 75 42 75 23 0 33 -6 42 -25z" />
+                            <path class="fill-orange-500"
+                                d="M949 203 c-9 -2 -19 -15 -22 -29 -4 -21 -1 -24 28 -24 28 0 32 3 30 27 -1 28 -9 33 -36 26z" />
+                        </g>
+                    </svg>
 
-            <div class="flex justify-center items-center">
-                <svg id="hamburgerBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="md:hidden size-8 text-white mr-3 duration-500">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                  </svg>
+                    <div class="flex justify-center items-center">
+                        <svg id="hamburgerBtn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="md:hidden size-8 text-white mr-3 duration-500">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </div>
+
+
+                    <ul id="orgNavMenu" class="md:flex hidden items-center gap-x-7 text-lg text-white duration-500">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Protfolio
+                            </a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="container">
+                    <ul id="navMenu"
+                        class="bg-white w-full md:hidden h-0 text-center space-y-5 duration-300 py-0 overflow-hidden fixed left-0 z-50">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+
+
+
             </div>
-                  
-
-                 <ul id="orgNavMenu" class="md:flex hidden items-center gap-x-7 text-lg text-white duration-500">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Protfolio
-                    </a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul> 
-
-            </div>
-
-            <div class="container">
-                <ul id="navMenu" class="bg-white w-full md:hidden h-0 text-center space-y-5 duration-300 py-0 overflow-hidden fixed left-0 z-50">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Blogs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            
-            
-
-        </div>
         </section>
-        
+
         <!-- instruction -->
         <section>
             <div class="bg-black h-[850px] md:h-[750px] relative pt-14 md:pt-0">
-                
-                 
+
+
                 <!-- image -->
                 <div class="relative md:flex flex-col justify-center items-center w-full bottom-0 h-full z-10">
-                
-                <div class="flex justify-center items-center w-full bottom-0 h-full z-10">
-                    <img id="image" class="lg:w-[500px] w-[400px] absolute md:bottom-[19%] h-[400px] md:h-auto object-cover bottom-[40%] md:z-50" src="../img/banner.png" alt="">
-                </div>
-                    <span class="text-white-stroke text-black font-lalezar text-6xl lg:tracking-[1.1rem] tracking-wider top-[6%] left-20 md:left-auto md:top-auto mb-20 lg:mb-56 mr-[380px] lg:mr-[465px] absolute -z-20">HELLO</span>
-                    
-                    <h1 class="text-2xl md:inline-block relative lg:-top-[280px] w-fit md:w-auto -top-80 left-10 md:-top-[200px] lg:left-28 md:left-56 //// after:absolute after:top-5 after:ml-4 after:bg-[#fbaa33] after:w-[50%] md:after:w-[50%] after:h-[2px] after:content-[''] text-white z-50">I AM A</h1>
 
-                    <span class="font-lalezar text-[#fbaa33] tracking-wider md:-right-32 lg:-right-[260px] -top-80 left-10 md:left-auto md:-top-[200px] lg:-top-[280px] relative text-4xl md:text-6xl lg:text-7xl z-50">DEVELOPER</span>
+                    <div class="flex justify-center items-center w-full bottom-0 h-full z-10">
+                        <img id="image"
+                            class="lg:w-[500px] w-[400px] absolute md:bottom-[19%] h-[400px] md:h-auto object-cover bottom-[40%] md:z-50"
+                            src="../img/banner.png" alt="">
+                    </div>
+                    <span
+                        class="text-white-stroke text-black font-lalezar text-6xl lg:tracking-[1.1rem] tracking-wider top-[6%] left-20 md:left-auto md:top-auto mb-20 lg:mb-56 mr-[380px] lg:mr-[465px] absolute -z-20">HELLO</span>
+
+                    <h1
+                        class="text-2xl md:inline-block relative lg:-top-[280px] w-fit md:w-auto -top-80 left-10 md:-top-[200px] lg:left-28 md:left-56 //// after:absolute after:top-5 after:ml-4 after:bg-[#fbaa33] after:w-[50%] md:after:w-[50%] after:h-[2px] after:content-[''] text-white z-50">
+                        I AM A</h1>
+
+                    <span
+                        class="font-lalezar text-[#fbaa33] tracking-wider md:-right-32 lg:-right-[260px] -top-80 left-10 md:left-auto md:-top-[200px] lg:-top-[280px] relative text-4xl md:text-6xl lg:text-7xl z-50">DEVELOPER</span>
                 </div>
 
                 <!-- action area -->
                 <div class="absolute w-full flex justify-center bottom-0 z-20">
-                     <div class="grid lg:grid-cols-3 gap-x-20 w-[85%] bg-[#262626] px-7 py-10 rounded-tr-[30px] rounded-tl-[30px]">
+                    <div
+                        class="grid lg:grid-cols-3 gap-x-20 w-[85%] bg-[#262626] px-7 py-10 rounded-tr-[30px] rounded-tl-[30px]">
                         <div>
                             <h1 class="text-white font-bold text-2xl">Want An Expert</h1>
-                            <p class="text-[#9e9e9e] text-sm py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, alias!</p>
-                            <a class="text-[#fbaa33] font-bold" href="#">Hire Me <i class="fa fa-angle-right pl-1" aria-hidden="true"></i></a>
+                            <p class="text-[#9e9e9e] text-sm py-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Deleniti, alias!</p>
+                            <a class="text-[#fbaa33] font-bold" href="#">Hire Me <i class="fa fa-angle-right pl-1"
+                                    aria-hidden="true"></i></a>
                         </div>
                         <div class="lg:block hidden">
                             <h1 class="text-white font-bold text-2xl text-nowrap">Unlimited Revisions</h1>
-                            <p class="text-[#9e9e9e] text-sm py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, alias!</p>
-                            <a class="text-[#fbaa33] font-bold" href="#">Supports <i class="fa fa-angle-right pl-1" aria-hidden="true"></i></a>
+                            <p class="text-[#9e9e9e] text-sm py-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Deleniti, alias!</p>
+                            <a class="text-[#fbaa33] font-bold" href="#">Supports <i class="fa fa-angle-right pl-1"
+                                    aria-hidden="true"></i></a>
                         </div>
                         <div class="lg:block hidden">
                             <h1 class="text-white font-bold text-2xl">Let's Discuss</h1>
-                            <p class="text-[#9e9e9e] text-sm py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, alias!</p>
-                            <a class="text-[#fbaa33] font-bold" href="#">Contact Me <i class="fa fa-angle-right pl-1" aria-hidden="true"></i></a>
+                            <p class="text-[#9e9e9e] text-sm py-2">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Deleniti, alias!</p>
+                            <a class="text-[#fbaa33] font-bold" href="#">Contact Me <i class="fa fa-angle-right pl-1"
+                                    aria-hidden="true"></i></a>
                         </div>
-                     </div>
+                    </div>
                 </div>
 
                 <!-- the orange Line -->
-                 <div class="absolute w-full flex justify-center items-end bottom-0 z-30">
+                <div class="absolute w-full flex justify-center items-end bottom-0 z-30">
 
                     <div class="bg-[#fbaa33] w-full h-2"></div>
                 </div>
@@ -116,131 +142,181 @@
         <!-- hero -->
         <section>
             <div class="container pt-20">
-            <div class="flex md:justify-start justify-center items-center">
-                <h1 class="text-[40px] inline-block font-lalezar relative //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">ABOUT
-                    <span class="text-stroke text-white">ME</span>
-                </h1>
-            </div>
+                <div class="flex md:justify-start justify-center items-center">
+                    <h1
+                        class="text-[40px] inline-block font-lalezar relative //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">
+                        ABOUT
+                        <span class="text-stroke text-white">ME</span>
+                    </h1>
+                </div>
                 <!-- content -->
                 <div class="pt-16 md:flex justify-between">
                     <!-- left -->
                     <div class="flex">
                         <div class="relative top-10">
-                        <div>
-                            <ul class="md:w-fit hidden md:block w-36 md:static absolute left-20 top-0 font-lalezar text-xl text-[#fbaa33] box-shadows rounded-md z-30">
-                                <li class="bg-[#fbaa33] text-white"><a href="#" class="flex gap-x-2 py-4 pr-16 pl-4 z-10">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-                                      </svg>
-                                      </span>
-                                    <span>Profile</span>
-                                </a></li>
-                                <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
-                                      </svg>
-                                      </span>
-                                    <span>Skills</span>
-                                </a></li>
-                                <li  class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                                      </svg>
-                                      </span>
-                                    <span>Awards</span>
-                                </a></li>
-                                <li  class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
-                                      </svg>
-                                      </span>
-                                    <span>Chat</span>
-                                </a></li>
-                                <li  class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                                      </svg>
-                                      </span>
-                                    <span>Contact</span>
-                                </a></li>
-                            </ul>
-                        </div>
-                            <div class="md:absolute md:block hidden left-[20px] md:left-20 lg:left-24 -top-20 size-[150%] md:size-[300px] -z-10">
+                            <div>
+                                <ul
+                                    class="md:w-fit hidden md:block w-36 md:static absolute left-20 top-0 font-lalezar text-xl text-[#fbaa33] box-shadows rounded-md z-30">
+                                    <li class="bg-[#fbaa33] text-white"><a href="#"
+                                            class="flex gap-x-2 py-4 pr-16 pl-4 z-10">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                                                </svg>
+                                            </span>
+                                            <span>Profile</span>
+                                        </a></li>
+                                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                                                </svg>
+                                            </span>
+                                            <span>Skills</span>
+                                        </a></li>
+                                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+                                                </svg>
+                                            </span>
+                                            <span>Awards</span>
+                                        </a></li>
+                                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+                                                </svg>
+                                            </span>
+                                            <span>Chat</span>
+                                        </a></li>
+                                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                            <span><svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                                    class="size-6">
+                                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                                                </svg>
+                                            </span>
+                                            <span>Contact</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                            <div
+                                class="md:absolute md:block hidden left-[20px] md:left-20 lg:left-24 -top-20 size-[150%] md:size-[300px] -z-10">
                                 <img src="../img/about.png" alt="">
                             </div>
                         </div>
-                        
-                     </div>
-                <div class="flex justify-center items-center">
-                     <div class="md:hidden size-[300px] -z-10">
-                        <img src="../img/about.png" alt="">
+
                     </div>
-                </div>
-                
-            <div class="flex  md:w-fit justify-center items-center relative">
-                <ul id="secendMenu" class="block md:hidden absolute -top-60  mr-64 font-lalezar text-xl text-[#fbaa33] box-shadows rounded-md z-30">
-                    <li class="bg-[#fbaa33] text-white"><a href="#" class="flex gap-x-2 py-4 pr-16 pl-4 z-10">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"></path>
-                          </svg>
-                          </span>
-                        <span>Profile</span>
-                    </a></li>
-                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"></path>
-                          </svg>
-                          </span>
-                        <span>Skills</span>
-                    </a></li>
-                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0"></path>
-                          </svg>
-                          </span>
-                        <span>Awards</span>
-                    </a></li>
-                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"></path>
-                          </svg>
-                          </span>
-                        <span>Chat</span>
-                    </a></li>
-                    <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
-                        <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
-                          </svg>
-                          </span>
-                        <span>Contact</span>
-                    </a></li>
-                </ul>
-            </div>
-                      
-                     <!-- right -->
-                      <div class="md:w-[60%] pt-[220px] md:pt-0">
+                    <div class="flex justify-center items-center">
+                        <div class="md:hidden size-[300px] -z-10">
+                            <img src="../img/about.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex  md:w-fit justify-center items-center relative">
+                        <ul id="secendMenu"
+                            class="block md:hidden absolute -top-60  mr-64 font-lalezar text-xl text-[#fbaa33] box-shadows rounded-md z-30">
+                            <li class="bg-[#fbaa33] text-white"><a href="#" class="flex gap-x-2 py-4 pr-16 pl-4 z-10">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span>Profile</span>
+                                </a></li>
+                            <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span>Skills</span>
+                                </a></li>
+                            <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span>Awards</span>
+                                </a></li>
+                            <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.068.157 2.148.279 3.238.364.466.037.893.281 1.153.671L12 21l2.652-3.978c.26-.39.687-.634 1.153-.67 1.09-.086 2.17-.208 3.238-.365 1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span>Chat</span>
+                                </a></li>
+                            <li class="bg-white"><a href="#" class="flex gap-x-2  py-4 pr-16 pl-4">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75">
+                                            </path>
+                                        </svg>
+                                    </span>
+                                    <span>Contact</span>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- right -->
+                    <div class="md:w-[60%] pt-[220px] md:pt-0">
                         <h1 class="text-2xl text-stroke-black">HELLO, I AM MIKE JOJO</h1>
                         <h1 class="text-xl pt-2 pb-6 text-[#fbaa33]">From NYC, America</h1>
-                        <p class="text-[#666] pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae rerum nesciunt esse similique possimus excepturi quam accusantium, maiores minima sapiente, harum distinctio, doloremque sunt.</p>
-                        <p class="text-[#666]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae rerum nesciunt esse similique.</p>
+                        <p class="text-[#666] pb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae
+                            rerum nesciunt esse similique possimus excepturi quam accusantium, maiores minima sapiente,
+                            harum distinctio, doloremque sunt.</p>
+                        <p class="text-[#666]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae rerum
+                            nesciunt esse similique.</p>
 
-                        <a class="bg-[#fbaa33] font-bold text-white clip-polygon py-4 px-7 mt-5 mb-10 flex gap-x-2 justify-between items-center w-[200px] relative" href="#">
+                        <a class="bg-[#fbaa33] font-bold text-white clip-polygon py-4 px-7 mt-5 mb-10 flex gap-x-2 justify-between items-center w-[200px] relative"
+                            href="#">
                             <span>Read More</span>
-                    
+
                             <span class="absolute left-[90px] bg-white w-20 button-rotate h-[3px]"></span>
-                    
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" size-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class=" size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
                             </svg>
                         </a>
                         <!-- social media -->
                         <ul class="flex gap-x-4">
-                            <li class="group"><a href="#"><i class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-facebook"></i></a></li>
-                            <li class="group"><a href="#"><i class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-instagram"></i></a></li>
-                            <li class="group"><a href="#"><i class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-linkedin"></i></a></li>
-                            <li class="group"><a href="#"><i class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-twitter"></i></a></li>
+                            <li class="group"><a href="#"><i
+                                        class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-facebook"></i></a>
+                            </li>
+                            <li class="group"><a href="#"><i
+                                        class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-instagram"></i></a>
+                            </li>
+                            <li class="group"><a href="#"><i
+                                        class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-linkedin"></i></a>
+                            </li>
+                            <li class="group"><a href="#"><i
+                                        class="text-[#666] group-hover:text-[#fbaa33] duration-300 rounded-full shadow-lg p-4 fa fa-twitter"></i></a>
+                            </li>
                         </ul>
-                      </div>
+                    </div>
                 </div>
 
             </div>
@@ -251,216 +327,271 @@
         <!-- MY SERVICE -->
         <section>
             <div class="container pt-20">
-            <div class="flex md:justify-start justify-center items-center">
-                <h1 class="text-[40px] inline-block font-lalezar relative //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-[''] text-center">MY 
-                    <span class="text-stroke text-white">SERVICE</span>
-                </h1>
-            </div>
+                <div class="flex md:justify-start justify-center items-center">
+                    <h1
+                        class="text-[40px] inline-block font-lalezar relative //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-[''] text-center">
+                        MY
+                        <span class="text-stroke text-white">SERVICE</span>
+                    </h1>
+                </div>
                 <!-- content -->
-            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-10 gap-x-5 py-20">
+                <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-10 gap-x-5 py-20">
 
-                <div class="sm:flex gap-x-8">
+                    <div class="sm:flex gap-x-8">
                         <!-- box -->
-                <div class="flex justify-center items-center sm:items-start">
-                    <div class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
-                        </svg>
+                        <div class="flex justify-center items-center sm:items-start">
+                            <div
+                                class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Website Design<h1>
+                                    <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Debitis, commodi.</p>
+                                    <p class="flex items-center justify-center sm:justify-start h-5">
+                                        <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
+                                            Read More
+                                        </a>
+                                        <span class="peer-hover:translate-x-1 duration-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                        </div>
                     </div>
-                </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Website Design<h1>
-                        <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
-                        <p class="flex items-center justify-center sm:justify-start h-5">
-                            <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
-                                Read More
-                            </a>
-                            <span class="peer-hover:translate-x-1 duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                              </svg>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <!------  ------>
-                <div class="sm:flex gap-x-8">
+                    <!------  ------>
+                    <div class="sm:flex gap-x-8">
                         <!-- box -->
-                <div class="flex justify-center items-center sm:items-start">
-                    <div class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
-                          </svg>
-                          
-                    </div>
-                </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Web Development<h1>
-                        <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
-                        <p class="flex items-center justify-center sm:justify-start h-5">
-                            <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
-                                Read More
-                            </a>
-                            <span class="peer-hover:translate-x-1 duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                              </svg>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <!------  ------>
-                <div class="sm:flex gap-x-8">
-                        <!-- box -->
-                <div class="flex justify-center items-center sm:items-start">
-                    <div class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                          </svg>                          
-                    </div>
-                </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">App Development<h1>
-                        <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
-                        <p class="flex items-center justify-center sm:justify-start h-5">
-                            <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
-                                Read More
-                            </a>
-                            <span class="peer-hover:translate-x-1 duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                              </svg>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <!------  ------>
-                <div class="sm:flex gap-x-8">
-                        <!-- box -->
-                <div class="flex justify-center items-center sm:items-start">
-                    <div class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
-                          </svg>                          
-                    </div>
-                </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Cyber Security<h1>
-                        <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
-                        <p class="flex items-center justify-center sm:justify-start h-5">
-                            <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
-                                Read More
-                            </a>
-                            <span class="peer-hover:translate-x-1 duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                              </svg>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <!------  ------>
-                <div class="sm:flex gap-x-8">
-                        <!-- box -->
-                <div class="flex justify-center items-center sm:items-start">
-                    <div class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
-                          </svg>
-                          
-                    </div>
-                </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Digital Marketing<h1>
-                        <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
-                        <p class="flex items-center justify-center sm:justify-start h-5">
-                            <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
-                                Read More
-                            </a>
-                            <span class="peer-hover:translate-x-1 duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                              </svg>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <!------  ------>
-                <div class="sm:flex gap-x-8">
-                        <!-- box -->
-                <div class="flex justify-center items-center sm:items-start">
-                    <div class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
-                          </svg>
-                          
-                    </div>
-                </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Other Category<h1>
-                        <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, commodi.</p>
-                        <p class="flex items-center justify-center sm:justify-start h-5">
-                            <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
-                                Read More
-                            </a>
-                            <span class="peer-hover:translate-x-1 duration-500">
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                              </svg>
-                            </span>
-                        </p>
-                    </div>
-                </div>
+                        <div class="flex justify-center items-center sm:items-start">
+                            <div
+                                class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
 
-            </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Web Development<h1>
+                                    <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Debitis, commodi.</p>
+                                    <p class="flex items-center justify-center sm:justify-start h-5">
+                                        <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
+                                            Read More
+                                        </a>
+                                        <span class="peer-hover:translate-x-1 duration-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                        </div>
+                    </div>
+                    <!------  ------>
+                    <div class="sm:flex gap-x-8">
+                        <!-- box -->
+                        <div class="flex justify-center items-center sm:items-start">
+                            <div
+                                class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">App Development<h1>
+                                    <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Debitis, commodi.</p>
+                                    <p class="flex items-center justify-center sm:justify-start h-5">
+                                        <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
+                                            Read More
+                                        </a>
+                                        <span class="peer-hover:translate-x-1 duration-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                        </div>
+                    </div>
+                    <!------  ------>
+                    <div class="sm:flex gap-x-8">
+                        <!-- box -->
+                        <div class="flex justify-center items-center sm:items-start">
+                            <div
+                                class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Cyber Security<h1>
+                                    <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Debitis, commodi.</p>
+                                    <p class="flex items-center justify-center sm:justify-start h-5">
+                                        <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
+                                            Read More
+                                        </a>
+                                        <span class="peer-hover:translate-x-1 duration-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                        </div>
+                    </div>
+                    <!------  ------>
+                    <div class="sm:flex gap-x-8">
+                        <!-- box -->
+                        <div class="flex justify-center items-center sm:items-start">
+                            <div
+                                class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Digital Marketing<h1>
+                                    <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Debitis, commodi.</p>
+                                    <p class="flex items-center justify-center sm:justify-start h-5">
+                                        <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
+                                            Read More
+                                        </a>
+                                        <span class="peer-hover:translate-x-    1 duration-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                        </div>
+                    </div>
+                    <!------  ------>
+                    <div class="sm:flex gap-x-8">
+                        <!-- box -->
+                        <div class="flex justify-center items-center sm:items-start">
+                            <div
+                                class="size-14 bg-gradient-to-r from-[#d8801c] to-[#f7982c] from-50% to-50% rounded /// flex justify-center items-center text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m11.25 11.25.041-.02a.75.75 0 0 1 1.063.852l-.708 2.836a.75.75 0 0 0 1.063.853l.041-.021M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9-3.75h.008v.008H12V8.25Z" />
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div>
+                            <h1 class="text-xl font-bold text-center sm:text-left pt-5 sm:pt-0">Other Category<h1>
+                                    <p class="py-3 text-[#666] text-sm text-center sm:text-left">Lorem ipsum dolor sit
+                                        amet, consectetur adipisicing elit. Debitis, commodi.</p>
+                                    <p class="flex items-center justify-center sm:justify-start h-5">
+                                        <a href="#" class="text-[#f39325] font-lalezar text-lg pt-1 peer">
+                                            Read More
+                                        </a>
+                                        <span class="peer-hover:translate-x-1 duration-500">
+                                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="size-4 text-[#f39325]">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
         <!-- total -->
-         <section>
+        <section>
             <div class="grid grid-cols-1 md:grid-cols-2">
 
                 <!-- total content -->
                 <div class="flex justify-center items-center ">
                     <div class="grid grid-cols-1 sm:grid-cols-2">
-                        <div class="flex-col justify-center items-center border-r-[1px] border-b-[1px] p-14 border-[#e9e9e9]">
-                          <div class="flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-white bg-[#f39325] py-3 rounded-full">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                            </svg>
-                          </div>
+                        <div
+                            class="flex-col justify-center items-center border-r-[1px] border-b-[1px] p-14 border-[#e9e9e9]">
+                            <div class="flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="size-14 text-white bg-[#f39325] py-3 rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </div>
                             <p class="font-bold text-xl text-center py-2">Project Done</p>
                             <p class="text-center text-[#f39325] font-lalezar text-3xl">1,23,487</p>
                         </div>
                         <!----  ---->
-                        <div class="flex-col justify-center items-center border-l-[1px] border-b-[1px] p-14 border-[#e9e9e9]">
-                          <div class="flex justify-center items-center">    
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-white bg-[#f39325] py-3 rounded-full">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
-                              </svg>
-                              
-                          </div>
+                        <div
+                            class="flex-col justify-center items-center border-l-[1px] border-b-[1px] p-14 border-[#e9e9e9]">
+                            <div class="flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="size-14 text-white bg-[#f39325] py-3 rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                                </svg>
+
+                            </div>
                             <p class="font-bold text-xl text-center py-2">Total Cilents</p>
                             <p class="text-center text-[#f39325] font-lalezar text-3xl">2,23,487</p>
                         </div>
                         <!----  ---->
-                        <div class="flex-col justify-center items-center border-r-[1px] border-t-[1px] p-14 border-[#e9e9e9]">
-                          <div class="flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-white bg-[#f39325] py-3 rounded-full">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
-                              </svg>
-                          </div>
+                        <div
+                            class="flex-col justify-center items-center border-r-[1px] border-t-[1px] p-14 border-[#e9e9e9]">
+                            <div class="flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="size-14 text-white bg-[#f39325] py-3 rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                                </svg>
+                            </div>
                             <p class="font-bold text-xl text-center py-2">Live Products</p>
                             <p class="text-center text-[#f39325] font-lalezar text-3xl">1,35,877</p>
                         </div>
                         <!----  ---->
-                        <div class="flex-col justify-center items-center border-t-[1px] border-l-[1px] p-14 border-[#e9e9e9]">
-                          <div class="flex justify-center items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-14 text-white bg-[#f39325] py-3 rounded-full">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
-                              </svg>
-                              
-                          </div>
+                        <div
+                            class="flex-col justify-center items-center border-t-[1px] border-l-[1px] p-14 border-[#e9e9e9]">
+                            <div class="flex justify-center items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor"
+                                    class="size-14 text-white bg-[#f39325] py-3 rounded-full">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M16.5 18.75h-9m9 0a3 3 0 0 1 3 3h-15a3 3 0 0 1 3-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 0 1-.982-3.172M9.497 14.25a7.454 7.454 0 0 0 .981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 0 0 7.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 0 0 2.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 0 1 2.916.52 6.003 6.003 0 0 1-5.395 4.972m0 0a6.726 6.726 0 0 1-2.749 1.35m0 0a6.772 6.772 0 0 1-3.044 0" />
+                                </svg>
+
+                            </div>
                             <p class="font-bold text-xl text-center py-2">Total Awards</p>
                             <p class="text-center text-[#f39325] font-lalezar text-3xl">5,773</p>
                         </div>
@@ -468,93 +599,350 @@
                 </div>
                 <!-- man image -->
                 <div class="md:flex hidden justify-end">
-                    <div class="w-[50%] h-[100%] bg-no-repeat bg-fixed bg-contain bg-right relative ///// after:absolute after:-left-10 after:content-[''] after:bg-[#f39325] after:w-[100%] after:-z-10 after:h-full" style="background-image: url('../img/man.jpg');"><div> 
-                </div>
-                <!-- before:absolute before:left-[133px] before:content-[''] before:bg-[#f39325] before:w-full before:-z-10 before:h-full -->
-            </div>
-         </section>
+                    <div class="w-[50%] h-[100%] bg-no-repeat bg-fixed bg-contain bg-right relative ///// after:absolute after:-left-10 after:content-[''] after:bg-[#f39325] after:w-[100%] after:-z-10 after:h-full"
+                        style="background-image: url('../img/man.jpg');">
+                        <div>
+                        </div>
+                        <!-- before:absolute before:left-[133px] before:content-[''] before:bg-[#f39325] before:w-full before:-z-10 before:h-full -->
+                    </div>
+        </section>
         <!-- my portfolio -->
         <section>
             <div class="container">
-            <div class="flex md:justify-start justify-center items-center">
-                <h1 class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">MY  
-                    <span class="text-stroke text-white">PROTFOLIO</span>
-                </h1>
-            </div>
+                <div class="flex md:justify-start justify-center items-center">
+                    <h1
+                        class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">
+                        MY
+                        <span class="text-stroke text-white">PROTFOLIO</span>
+                    </h1>
+                </div>
                 <!-- buttons -->
-            <div class="flex justify-center items-center">
-                 <div class="text-center md:text-left space-x-5 space-y-5">
-                    <a href="#" class="text-white inline-block bg-[#444] ring-1 ring-[#444] py-2 px-5 rounded">
-                        Logo
-                    </a>
-                    
-                    <a href="#" class="text-[#444] inline-block ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
-                        Illustration
-                    </a>
-                        
-                    <a href="#" class="text-[#444] inline-block ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
-                        Web Template
-                    </a>
-                    
-                    <a href="#" class="text-[#444] inline-block  ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
-                        Business Card
-                    </a>
-                    
-                    <a href="#" class="text-[#444] inline-block ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
-                        Brochure
-                    </a>
-                 </div>
-            </div>
+                <div class="flex justify-center items-center">
+                    <div class="text-center md:text-left space-x-5 space-y-5">
+                        <a href="#" class="text-white inline-block bg-[#444] ring-1 ring-[#444] py-2 px-5 rounded">
+                            Logo
+                        </a>
+
+                        <a href="#"
+                            class="text-[#444] inline-block ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
+                            Illustration
+                        </a>
+
+                        <a href="#"
+                            class="text-[#444] inline-block ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
+                            Web Template
+                        </a>
+
+                        <a href="#"
+                            class="text-[#444] inline-block  ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
+                            Business Card
+                        </a>
+
+                        <a href="#"
+                            class="text-[#444] inline-block ring-1 ring-[#444] py-2 px-5 rounded hover:bg-[#444] hover:text-white duration-500">
+                            Brochure
+                        </a>
+                    </div>
+                </div>
                 <!-- images -->
-            <div class="flex justify-center items-center mt-10">
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-6 sm:w-[900px]">
-                    <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125" src="../img/protfolio image/port1.jpg" alt=""></div>
-                    <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125" src="../img/protfolio image/port2.jpg" alt=""></div>
-                    <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125" src="../img/protfolio image/port3.jpg" alt=""></div>
-                    <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125" src="../img/protfolio image/port4.jpg" alt=""></div>
-                    <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125" src="../img/protfolio image/port5.jpg" alt=""></div>
-                    <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125" src="../img/protfolio image/port6.jpg" alt=""></div>
-                </div> 
-            </div
-            
-            </div>
+                <div class="flex justify-center items-center mt-10">
+                    <div class="grid sm:grid-cols-2 md:grid-cols-3 justify-center items-center gap-6 sm:w-[900px]">
+                        <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img
+                                class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125"
+                                src="../img/protfolio image/port1.jpg" alt=""></div>
+                        <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img
+                                class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125"
+                                src="../img/protfolio image/port2.jpg" alt=""></div>
+                        <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img
+                                class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125"
+                                src="../img/protfolio image/port3.jpg" alt=""></div>
+                        <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img
+                                class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125"
+                                src="../img/protfolio image/port4.jpg" alt=""></div>
+                        <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img
+                                class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125"
+                                src="../img/protfolio image/port5.jpg" alt=""></div>
+                        <div class=" flex justify-center items-center overflow-hidden rounded cursor-pointer"><img
+                                class="w-full transition-transform duration-200 hover:rotate-12 hover:scale-125"
+                                src="../img/protfolio image/port6.jpg" alt=""></div>
+                    </div>
+                </div </div>
         </section>
         <!-- last review -->
         <section>
             <div>
                 <div class="container pt-24">
-                <div class="flex md:justify-start justify-center items-center">
-                    <h1 class="text-[40px] inline-block font-lalezar relative pb-5 mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">LATEST  
-                        <span class="text-stroke text-white">REVIEWS</span>
-                    </h1>
-                </div>
+                    <div class="flex md:justify-start justify-center items-center">
+                        <h1
+                            class="text-[40px] inline-block font-lalezar relative pb-5 mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">
+                            LATEST
+                            <span class="text-stroke text-white">REVIEWS</span>
+                        </h1>
+                    </div>
 
                     <!-- LATEST REVIEWS CONTENT -->
                     <div class="lg:flex">
                         <!-- left -->
-                    <div class="lg:w-[40%]">
-                        <div>
-                            <h1 class="text-2xl font-bold">Trusted With 35,000+ Client</h1>
-                            <p class="py-3 text-xl text-[#eea551]">25+ Years Of Experences</p>
-                            <p class="text-[#666]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, voluptas, velit? Reprehenderit aperiam</p>
+                        <div class="lg:w-[40%]">
+                            <div>
+                                <h1 class="text-2xl font-bold">Trusted With 35,000+ Client</h1>
+                                <p class="py-3 text-xl text-[#eea551]">25+ Years Of Experences</p>
+                                <p class="text-[#666]">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Provident, voluptas, velit? Reprehenderit aperiam</p>
 
-                            <a class="bg-[#fbaa33] font-bold text-white clip-polygon py-4 px-7 mt-5 mb-10 flex gap-x-2 justify-between items-center w-[175px] relative" href="#">
-                                <span>Hire Now</span>
-                        
-                                <span class="absolute left-[74px] bg-white w-20 button-rotate h-[3px]"></span>
-                        
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
-                                </svg>
-                            </a>
+                                <a class="bg-[#fbaa33] font-bold text-white clip-polygon py-4 px-7 mt-5 mb-10 flex gap-x-2 justify-between items-center w-[175px] relative"
+                                    href="#">
+                                    <span>Hire Now</span>
+
+                                    <span class="absolute left-[74px] bg-white w-20 button-rotate h-[3px]"></span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="1.5" stroke="currentColor" class=" size-6">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
-                    </div>
                         <!-- right -->
-                    <div class="lg:w-[60%]">
-                        <div class="bg-red-600 h-full flex justify-center items-center">
-                            <p class="">محل قرار گیری اسلایدر</p>
+                        <div class="lg:w-[60%]">
+                            <swiper-container class="mySwiper" pagination="true">
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                                <swiper-slide>
+                                    <div class="col-lg-6 slick-slide" data-slick-index="1" aria-hidden="true"
+                                        tabindex="0" role="tabpanel" id="slick-slide11"
+                                        aria-describedby="slick-slide-control11" style="width: 365px;">
+                                        <div class="comment-item">
+                                            <div class="comment-head">
+                                                <div class="row bg-black">
+                                                    <div class="col-lg-7">
+                                                        <h5>Alex Z.</h5>
+                                                    </div>
+                                                    <div class="col-lg-5 star">
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                        <i class="fa fa-star text-warning" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="comment-body">
+                                                <p class="text-justify">Lorem ipsum dolor sit amet, consectetur
+                                                    adipisicing elit. Reiciendis
+                                                    porro facilis eaque vero consequuntur saepe!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </swiper-slide>
+                            </swiper-container>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
@@ -562,132 +950,372 @@
         <!-- MY BLOGS -->
         <section>
             <div class="container">
-            <div class="flex md:justify-start justify-center items-center">
-                <h1 class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">MY   
-                    <span class="text-stroke text-white">BLOGS</span>
-                </h1>
-            </div>
+                <div class="flex md:justify-start justify-center items-center">
+                    <h1
+                        class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">
+                        MY
+                        <span class="text-stroke text-white">BLOGS</span>
+                    </h1>
+                </div>
                 <!-- Slider -->
-                <div class="bg-red-600 h-full flex justify-center items-center">
-                    <p class="">محل قرار گیری اسلایدر</p>
+                <div class=" h-full flex justify-center items-center">
+                    <swiper-container class="mySwiper" pagination="true">
+                        <swiper-slide>
+                            <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                           <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                           <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                           <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="col-lg-4 slick-slide slick-active" data-slick-index="1" aria-hidden="false" tabindex="-1" role="tabpanel" id="slick-slide21" aria-describedby="slick-slide-control21" style="width: 370px;">
+                                <div class="blog-item">
+                                    <div class="col-lg-12">
+                                        <div class="blog-img"></div>
+                                        <img src="/img/image.png" alt="blog-img" class="img-fluid w-100">
+                                    </div>
+                                    <div class="col-lg-11 m-auto">
+                                        <div class="blog-txt">
+                                            <div class="blog-info">
+                                                <span><i class="fa fa-heart-o" aria-hidden="true"></i> 3.5k</span>
+                                                <span><i class="fa fa-comment-o" aria-hidden="true"></i> 203</span>
+                                                <span><i class="fa fa-share-square-o" aria-hidden="true"></i> 1k</span>
+                                            </div>
+                                            <a href="#" tabindex="0">
+                                                <h3>Startup Tricks <i class="fa fa-angle-right" aria-hidden="true"></i></h3>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </swiper-slide>
+                    </swiper-container>
                 </div>
             </div>
         </section>
         <!-- CONTACT ME -->
         <section>
             <div class="container">
-            <div class="flex md:justify-start justify-center items-center">
-                <h1 class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">CONTACT   
-                    <span class="text-stroke text-white">ME</span>
-                </h1>
-            </div>
+                <div class="flex md:justify-start justify-center items-center">
+                    <h1
+                        class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">
+                        CONTACT
+                        <span class="text-stroke text-white">ME</span>
+                    </h1>
+                </div>
             </div>
 
-                <!-- CONTACT ME CONTENT -->
-            
-                <div class="md:flex justify-center gap-x-10">
+            <!-- CONTACT ME CONTENT -->
 
-                    <!-- social media -->
-                    <div class="relative hidden md:flex items-center justify-center w-96 h-96  text-white rounded-full">
-                        <div class="size-16 top-14 left-24 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
-                            <i class="fa fa-twitter text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
-                        </div>
-                        <div class="size-16 top-14 left-56 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
-                            <i class="fa fa-youtube-play text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
-                        </div>
-                        <div class="size-16 top-40 left-7 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
-                            <i class="fa fa-instagram text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
-                        </div>
-                        <div class="size-16 top-40 left-40 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
-                            <i class="fa fa-facebook text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
-                        </div>
-                        <div class="size-16 top-40 right-7 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
-                            <i class="fa fa-dribbble text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
-                        </div>
-                        <div class="size-16 top-64 left-24 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
-                            <i class="fa fa-pinterest-p text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
-                        </div>
-                        <div class="size-16 top-64 right-24 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
-                            <i class="fa fa-linkedin text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
-                        </div>
+            <div class="md:flex justify-center gap-x-10">
+
+                <!-- social media -->
+                <div class="relative hidden md:flex items-center justify-center w-96 h-96  text-white rounded-full">
+                    <div
+                        class="size-16 top-14 left-24 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
+                        <i class="fa fa-twitter text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
                     </div>
-                    
-                    
-                    <!-- Get In Touch -->
-                    <div class="box-shadows p-5 mx-10 md:mx-0 md:w-[40%] rounded">
-                        <h1 class="text-[#fbaa33] text-2xl font-bold pb-6 pt-1">Get In Touch</h1>
-                        <form class="grid grid-cols-1 space-y-8" action="">
-                            <input type="text" class="outline-none ring-1 ring-[#cccccc] placeholder:text-[#6e6e6e] py-2 px-3 rounded" placeholder="Enter Full Name">
-                            <input type="email" class="outline-none ring-1 ring-[#cccccc] placeholder:text-[#6e6e6e] py-2 px-3 rounded" placeholder="Enter Your Email">
-                            <textarea class="outline-none ring-1 ring-[#cccccc] placeholder:text-[#6e6e6e] py-2 px-3 rounded resize-none" id="exampleFormControlTextarea1" rows="3" placeholder="Messenge"></textarea>
-                        </form>
-                        <button class="font-lalezar bg-[#fbaa33] py-2 px-2 text-white text-2xl rounded mt-5 h-11">
-                            <a href="#">Submit Now</a>
-                        </button>
+                    <div
+                        class="size-16 top-14 left-56 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
+                        <i
+                            class="fa fa-youtube-play text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
+                    </div>
+                    <div
+                        class="size-16 top-40 left-7 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
+                        <i
+                            class="fa fa-instagram text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
+                    </div>
+                    <div
+                        class="size-16 top-40 left-40 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
+                        <i
+                            class="fa fa-facebook text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
+                    </div>
+                    <div
+                        class="size-16 top-40 right-7 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
+                        <i
+                            class="fa fa-dribbble text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
+                    </div>
+                    <div
+                        class="size-16 top-64 left-24 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
+                        <i
+                            class="fa fa-pinterest-p text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
+                    </div>
+                    <div
+                        class="size-16 top-64 right-24 p-5 absolute bg-white rounded-full box-shadows flex justify-center items-center hover:bg-[#fbaa33] duration-300 group cursor-pointer">
+                        <i
+                            class="fa fa-linkedin text-[#666] before:text-[25px] group-hover:text-white duration-300"></i>
                     </div>
                 </div>
+
+
+                <!-- Get In Touch -->
+                <div class="box-shadows p-5 mx-10 md:mx-0 md:w-[40%] rounded">
+                    <h1 class="text-[#fbaa33] text-2xl font-bold pb-6 pt-1">Get In Touch</h1>
+                    <form class="grid grid-cols-1 space-y-8" action="">
+                        <input type="text"
+                            class="outline-none ring-1 ring-[#cccccc] placeholder:text-[#6e6e6e] py-2 px-3 rounded"
+                            placeholder="Enter Full Name">
+                        <input type="email"
+                            class="outline-none ring-1 ring-[#cccccc] placeholder:text-[#6e6e6e] py-2 px-3 rounded"
+                            placeholder="Enter Your Email">
+                        <textarea
+                            class="outline-none ring-1 ring-[#cccccc] placeholder:text-[#6e6e6e] py-2 px-3 rounded resize-none"
+                            id="exampleFormControlTextarea1" rows="3" placeholder="Messenge"></textarea>
+                    </form>
+                    <button class="font-lalezar bg-[#fbaa33] py-2 px-2 text-white text-2xl rounded mt-5 h-11">
+                        <a href="#">Submit Now</a>
+                    </button>
+                </div>
+            </div>
         </section>
         <!-- TRUSTED BRAND -->
         <section>
             <div class="container">
-            <div class="flex md:justify-start justify-center items-center">
-                <h1 class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">TRUSTED    
-                    <span class="text-stroke text-white">BRAND</span>
-                </h1>
-            </div>
+                <div class="flex md:justify-start justify-center items-center">
+                    <h1
+                        class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">
+                        TRUSTED
+                        <span class="text-stroke text-white">BRAND</span>
+                    </h1>
+                </div>
 
                 <!-- TRUSTED BRAND content -->
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-7 mb-20">
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b1.png" alt="">
                         </div>
                     </div>
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b2.png" alt="">
                         </div>
                     </div>
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b3.png" alt="">
                         </div>
                     </div>
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b4.png" alt="">
                         </div>
                     </div>
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b5.png" alt="">
                         </div>
                     </div>
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b6.png" alt="">
                         </div>
                     </div>
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b7.png" alt="">
                         </div>
                     </div>
                     <div class="relative group p-4 rounded box-shadows">
-                        <div class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500"></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-0 h-1 bg-[#fbaa33] group-hover:w-full transition-all duration-500">
+                        </div>
                         <div class="flex justify-center items-center">
                             <img src="../img/TRUSTED BRAND img/b1.png" alt="">
                         </div>
                     </div>
                 </div>
-                
+
             </div>
         </section>
     </main>
@@ -698,13 +1326,16 @@
                 <span class="text-white absolute">.</span>
             </h2>
             <div class="flex justify-center space-x-4 mt-4">
-                <a href="#" class="relative flex items-center justify-center w-12 h-12 hover:ring-0 ring-1 ring-white text-white rounded-full hover:bg-[#fbaa33] transition-all duration-300">
+                <a href="#"
+                    class="relative flex items-center justify-center w-12 h-12 hover:ring-0 ring-1 ring-white text-white rounded-full hover:bg-[#fbaa33] transition-all duration-300">
                     <i class="fa fa-facebook hover:text-[#fff]"></i>
                 </a>
-                <a href="#" class="relative flex items-center justify-center w-12 h-12 hover:ring-0 ring-1 ring-white text-white rounded-full hover:bg-[#fbaa33] transition-all duration-300">
+                <a href="#"
+                    class="relative flex items-center justify-center w-12 h-12 hover:ring-0 ring-1 ring-white text-white rounded-full hover:bg-[#fbaa33] transition-all duration-300">
                     <i class="fa fa-linkedin hover:text-[#fff]"></i>
                 </a>
-                <a href="#" class="relative flex items-center justify-center w-12 h-12 hover:ring-0 ring-1 ring-white text-white rounded-full hover:bg-[#fbaa33] transition-all duration-300">
+                <a href="#"
+                    class="relative flex items-center justify-center w-12 h-12 hover:ring-0 ring-1 ring-white text-white rounded-full hover:bg-[#fbaa33] transition-all duration-300">
                     <i class="fa fa-twitter hover:text-[#fff]"></i>
                 </a>
             </div>
@@ -716,13 +1347,13 @@
             </div>
         </div>
         <div class="bg-[#313030] py-10 px-5 text-center">
-            <p>Copyright  &copy; 2020. All rights reserved by <span class="text-[#fbaa33]">DESIGNER</span>.</p>
+            <p>Copyright &copy; 2020. All rights reserved by <span class="text-[#fbaa33]">DESIGNER</span>.</p>
             <p>coding by : MohamadMobinRezaee</p>
             <p>team : NeonWeb</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 
 </html>
-
