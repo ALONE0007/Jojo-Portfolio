@@ -6,7 +6,8 @@
     <title>JOJO Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="effects.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
   </head>
 
   <body class="font-poppins text-[#222222]">
@@ -57,7 +58,7 @@
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact</a></li>
-                </ul>
+                </ul>   
             </div>
             
             
@@ -532,31 +533,110 @@
                     <!-- LATEST REVIEWS CONTENT -->
                     <div class="lg:flex">
                         <!-- left -->
-                    <div class="lg:w-[40%]">
-                        <div>
+                        <div class="lg:w-[40%]">
+                          <div>
                             <h1 class="text-2xl font-bold">Trusted With 35,000+ Client</h1>
                             <p class="py-3 text-xl text-[#eea551]">25+ Years Of Experences</p>
                             <p class="text-[#666]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, voluptas, velit? Reprehenderit aperiam</p>
-
+                      
                             <a class="bg-[#fbaa33] font-bold text-white clip-polygon py-4 px-7 mt-5 mb-10 flex gap-x-2 justify-between items-center w-[175px] relative" href="#">
-                                <span>Hire Now</span>
-                        
-                                <span class="absolute left-[74px] bg-white w-20 button-rotate h-[3px]"></span>
-                        
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" size-6">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
-                                </svg>
+                              <span>Hire Now</span>
+                              <span class="absolute left-[74px] bg-white w-20 button-rotate h-[3px]"></span>
+                              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class=" size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"></path>
+                              </svg>
                             </a>
+                          </div>
                         </div>
-                    </div>
                         <!-- right -->
-                    <div class="lg:w-[60%]">
-                        <div class="bg-red-600 h-full flex justify-center items-center">
-                            <p class="">محل قرار گیری اسلایدر</p>
+                        <div class="lg:w-[60%]">
+                            <div class="flex justify-center items-center">
+                                <div class="swiper-container cursor-pointer select-none mySwiper max-w-sm mx-auto p-2 overflow-hidden">
+                                    <div class="swiper-wrapper">
+                                        <!-- Slide 1 -->
+                                        <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                            <div class="flex justify-center gap-x-20 items-center mb-2 border-b-2 py-4">
+                                                <h5 class="text-base font-bold">Alex Z.</h5>
+                                                <div class="flex space-x-1">
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <p class=" text-gray-700 px-5 py-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis porro facilis eaque vero consequuntur saepe!</p>
+                                        </div>
+                        
+                                        <!-- Slide 2 -->
+                                        <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                            <div class="flex justify-center gap-x-20 items-center mb-2 border-b-2 py-4">
+                                                <h5 class="text-base font-bold">Alex Z.</h5>
+                                                <div class="flex space-x-1">
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <p class=" text-gray-700 px-5 py-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis porro facilis eaque vero consequuntur saepe!</p>
+                                        </div>
+                                        <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                            <div class="flex justify-center gap-x-20 items-center mb-2 border-b-2 py-4">
+                                                <h5 class="text-base font-bold">Alex Z.</h5>
+                                                <div class="flex space-x-1">
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <p class=" text-gray-700 px-5 py-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis porro facilis eaque vero consequuntur saepe!</p>
+                                        </div>
+                                        <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                            <div class="flex justify-center gap-x-20 items-center mb-2 border-b-2 py-4">
+                                                <h5 class="text-base font-bold">Alex Z.</h5>
+                                                <div class="flex space-x-1">
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <p class=" text-gray-700 px-5 py-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis porro facilis eaque vero consequuntur saepe!</p>
+                                        </div>
+                                        <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                            <div class="flex justify-center gap-x-20 items-center mb-2 border-b-2 py-4">
+                                                <h5 class="text-base font-bold">Alex Z.</h5>
+                                                <div class="flex space-x-1">
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <p class=" text-gray-700 px-5 py-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis porro facilis eaque vero consequuntur saepe!</p>
+                                        </div>
+                                        <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                            <div class="flex justify-center gap-x-20 items-center mb-2 border-b-2 py-4">
+                                                <h5 class="text-base font-bold">Alex Z.</h5>
+                                                <div class="flex space-x-1">
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                    <i class="fa fa-star text-yellow-400" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                            <p class=" text-gray-700 px-5 py-2 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis porro facilis eaque vero consequuntur saepe!</p>
+                                        </div>
+                                    </div>
+                                    <!-- Add Pagination -->
+                                    <div class="relative mt-10 z-50">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    </div>
-                </div>
+                      </div>
             </div>
         </section>
         <!-- MY BLOGS -->
@@ -568,8 +648,135 @@
                 </h1>
             </div>
                 <!-- Slider -->
-                <div class="bg-red-600 h-full flex justify-center items-center">
-                    <p class="">محل قرار گیری اسلایدر</p>
+                <div class="flex justify-center items-center relative">
+                    <div class="swiper-container cursor-pointer select-none mySwiper max-w-sm mx-auto p-2 overflow-hidden">
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                <img class="rounded" src="../img/image.png" alt="">
+                                <div class="flex justify-center items-center gap-x-5 pt-3">
+                                    <div>
+                                        <i class="fa fa-heart-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 3.5k</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-comment-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 203</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-share-square-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 1k</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                <img class="rounded" src="../img/image.png" alt="">
+                                <div class="flex justify-center items-center gap-x-5 pt-3">
+                                    <div>
+                                        <i class="fa fa-heart-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 3.5k</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-comment-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 203</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-share-square-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 1k</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                <img class="rounded" src="../img/image.png" alt="">
+                                <div class="flex justify-center items-center gap-x-5 pt-3">
+                                    <div>
+                                        <i class="fa fa-heart-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 3.5k</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-comment-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 203</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-share-square-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 1k</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Slide 4 -->
+                            <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                <img class="rounded" src="../img/image.png" alt="">
+                                <div class="flex justify-center items-center gap-x-5 pt-3">
+                                    <div>
+                                        <i class="fa fa-heart-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 3.5k</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-comment-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 203</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-share-square-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 1k</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Slide 5 -->
+                            <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                <img class="rounded" src="../img/image.png" alt="">
+                                <div class="flex justify-center items-center gap-x-5 pt-3">
+                                    <div>
+                                        <i class="fa fa-heart-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 3.5k</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-comment-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 203</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-share-square-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 1k</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Slide 6 -->
+                            <div class="swiper-slide bg-white rounded-lg shadow-lg p-4">
+                                <img class="rounded" src="../img/image.png" alt="">
+                                <div class="flex justify-center items-center gap-x-5 pt-3">
+                                    <div>
+                                        <i class="fa fa-heart-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 3.5k</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-comment-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 203</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa fa-share-square-o text-[#fbaa33]" aria-hidden="true"></i>
+                                        <span class="text-[#666]"> 1k</span>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="relative mt-10">
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -577,7 +784,7 @@
         <section>
             <div class="container">
             <div class="flex md:justify-start justify-center items-center">
-                <h1 class="text-[40px] inline-block font-lalezar relative mt-24 mb-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">CONTACT   
+                <h1 class="text-[40px] inline-block font-lalezar relative mb-6 mt-6 //// after:md:absolute after:top-6 after:ml-2 after:bg-[#e2e2e2] after:w-[120%] after:h-[2px] after:content-['']">CONTACT   
                     <span class="text-stroke text-white">ME</span>
                 </h1>
             </div>
@@ -721,6 +928,7 @@
             <p>team : NeonWeb</p>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 

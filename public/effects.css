@@ -32,3 +32,11 @@ padding: 0;
 height: auto;
 padding: 20px 0;
 }
+
+.swiper-slide {
+    width: 200px; /* کاهش عرض باکس‌ها */
+    height: auto;
+}
+.swiper-container{
+    width: 400px;
+}

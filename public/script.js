@@ -46,3 +46,16 @@ hamburgerBtn.addEventListener('click', function() {
         }, 10);
     }
 });
+
+// Slider //
+
+var swiper = new Swiper(".mySwiper", {
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000, // تاخیر 2 ثانیه‌ای بین هر اسلاید
+        disableOnInteraction: false, // متوقف نشدن اسلایدر هنگام تعامل با آن
+    },
+});
