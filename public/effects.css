@@ -40,3 +40,21 @@ padding: 20px 0;
 .swiper-container{
     width: 400px;
 }
+
+/*  */
+
+.active {
+    background-color: #fbaa33; /* bg-[#fbaa33] */
+    color: white; /* text-white */
+    display: flex; /* flex */
+    gap: 0.5rem; /* gap-x-2 */
+    padding-top: 1rem; /* py-4 */
+    padding-bottom: 1rem; /* py-4 */
+    padding-right: 4rem; /* pr-16 */
+    padding-left: 1rem; /* pl-4 */
+    z-index: 10; /* z-10 */
+}
+.no-content{
+    display: none;
+}
+
