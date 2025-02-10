@@ -1,11 +1,11 @@
+// Hamburger Menu
 let hamburgerBtn = document.getElementById("hamburgerBtn");
 let navMenu = document.getElementById("navMenu");
 let orgNavMenu = document.getElementById("orgNavMenu");
 let header = document.getElementById("header");
 let logoSvg = document.getElementById("logoSvg");
 
-// Scroll Animation //
-
+// Scroll Animation
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
     header.classList.remove("bg-black");
@@ -22,27 +22,23 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// to top btn //
-
+// To Top Button
 const toTopBtn = document.querySelector('#toTopBtn');
-
 window.addEventListener("scroll", function () {
-    if (window.scrollY > 500) {
-        toTopBtn.style.opacity = '1';
-        toTopBtn.style.transition = 'opacity 0.3s';
-    } else {
-        toTopBtn.style.opacity = '0';
-        toTopBtn.style.transition = 'opacity 0.3s';
-    }
+  if (window.scrollY > 500) {
+    toTopBtn.style.opacity = '1';
+    toTopBtn.style.transition = 'opacity 0.3s';
+  } else {
+    toTopBtn.style.opacity = '0';
+    toTopBtn.style.transition = 'opacity 0.3s';
+  }
 });
 
 toTopBtn.addEventListener('click', function () {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-
-// Hamburger Menu //
-
+// Hamburger Menu Toggle
 hamburgerBtn.addEventListener("click", function () {
   if (!navMenu.classList.contains("h-open")) {
     navMenu.style.height = "0";
@@ -62,8 +58,7 @@ hamburgerBtn.addEventListener("click", function () {
   }
 });
 
-// Slider //
-
+// Swiper Slider
 var swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
@@ -75,21 +70,20 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-//////////////////
-
+// Tab Switching Logic
 const aboutMeBtns = document.getElementById("aboutMeBtns");
+const secondAboutMeBtns = document.getElementById("secondAboutMeBtns");
 const aboutBtn = document.querySelectorAll("#aboutBtn");
+const SecondAboutBtn = document.querySelectorAll("#SecondAboutBtn");
 const articles = document.querySelectorAll(".content");
 
-aboutMeBtns.addEventListener("click", function (e) {
-  setTimeout(() => {
-    const id = e.target.dataset.id;
-    if (id) {
-      aboutBtn.forEach((btn) => {
-        btn.classList.remove("active");
-        e.target.classList.add("active");
-      });
-    }
+function handleTabClick(e, buttons) {
+  const id = e.target.dataset.id;
+  if (id) {
+    buttons.forEach((btn) => {
+      btn.classList.remove("active");
+      e.target.classList.add("active");
+    });
 
     articles.forEach(function (article) {
       if (article.id === id) {
@@ -98,5 +92,13 @@ aboutMeBtns.addEventListener("click", function (e) {
         article.classList.add("no-content");
       }
     });
-  }, 100);
+  }
+}
+
+aboutMeBtns.addEventListener("click", function (e) {
+  setTimeout(() => handleTabClick(e, aboutBtn), 100);
+});
+
+secondAboutMeBtns.addEventListener("click", function (e) {
+  setTimeout(() => handleTabClick(e, SecondAboutBtn), 100);
 });

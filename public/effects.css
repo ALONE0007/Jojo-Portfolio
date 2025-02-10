@@ -28,6 +28,17 @@ height: 0;
 padding: 0;
 }
 
+#secondAboutMeBtns{
+    @media (max-width:570px) {
+        left: 0;
+    }
+}
+#secondAboutMeBtns{
+    @media (max-width:570px) {
+        left: 0;
+    }
+}
+
 .h-open {
 height: auto;
 padding: 20px 0;
@@ -57,4 +68,3 @@ padding: 20px 0;
 .no-content{
     display: none;
 }
-
