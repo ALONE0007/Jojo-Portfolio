@@ -102,3 +102,10 @@ aboutMeBtns.addEventListener("click", function (e) {
 secondAboutMeBtns.addEventListener("click", function (e) {
   setTimeout(() => handleTabClick(e, SecondAboutBtn), 100);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll("img");
+    images.forEach(function(img) {
+        img.setAttribute("loading", "lazy");
+    });
+});
