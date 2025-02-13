@@ -21,6 +21,9 @@
         left: 0;
     }
 }
+html, body {
+    overflow-x: hidden;
+}
 #navMenu {
 transition: height 0.5s ease, padding 0.5s ease;
 overflow: hidden;
