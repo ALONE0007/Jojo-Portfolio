@@ -5,6 +5,46 @@ let orgNavMenu = document.getElementById("orgNavMenu");
 let header = document.getElementById("header");
 let logoSvg = document.getElementById("logoSvg");
 
+// introduction
+
+
+let introductionElem = document.getElementById('introduction')
+
+const careers = [
+    'Developer',
+    'Designer'
+]
+
+let careerIndex = 0
+let characterIndex = 0
+
+updateIntroduction()
+
+function updateIntroduction(){
+    characterIndex++
+    introductionElem.innerHTML = careers[careerIndex].slice(0,characterIndex)
+
+    if(characterIndex === careers[careerIndex].length){
+
+        setTimeout(() => {
+            careerIndex++
+            characterIndex = 0
+
+            if(careerIndex === careers.length){
+                careerIndex = 0
+            }
+        }, 2000);
+        
+    }
+
+
+    setTimeout(() => {
+        updateIntroduction()
+    }, 90);
+}
+
+
+
 // Scroll Animation
 window.addEventListener("scroll", function () {
   if (window.scrollY > 0) {
